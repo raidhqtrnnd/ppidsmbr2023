@@ -17,7 +17,7 @@
             <li class="menu-header">Profil</li>
             <li
                 class="nav-item dropdown {{ request()->is(
-                    'profile/kota-madiun',
+                    'profile/kota  ',
                     'profile/sejarah',
                     'profile/letak-geografis',
                     'profile/profil-pemerintah',
@@ -35,8 +35,8 @@
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-globe"></i>
                     <span>Pemerintah</span></a>
                 <ul class="dropdown-menu">
-                    {{-- <li class="{{ request()->is('profile/kota-madiun') ? 'active' : '' }}"><a class="nav-link"
-                            href="{{ route('madiunprofile.index') }}">Profil  </a></li>
+                    {{-- <li class="{{ request()->is('profile/kota  ') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route(' profile.index') }}">Profil  </a></li>
                     <li class="{{ request()->is('profile/sejarah') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('sejarah.index') }}">Sejarah  </a></li>
                     <li class="{{ request()->is('profile/letak-geografis') ? 'active' : '' }}"><a class="nav-link"
@@ -126,7 +126,7 @@
                             href="/ppidpelaksana">PPID Pelaksana</a></li> --}}
                 </ul>
             </li>
-            {{-- <li class="{{ request()->is('profile/transparansi-anggaran-kota-madiun') ? 'active' : '' }}"><a
+            {{-- <li class="{{ request()->is('profile/transparansi-anggaran-kota  ') ? 'active' : '' }}"><a
                     class="nav-link" href="{{ route('transparansi.index') }}"><i class="fas fa-bullhorn"></i>
                     <span>Transparansi Anggaran</span></a></li> --}}
 

@@ -28,7 +28,7 @@
         </span>
         <div class="ts-service-box-content">
           <h4>Email</h4>
-          <p>ppid@madiunkota.go.id</p>
+          <p>ppid@ kota.go.id</p>
         </div>
       </div>
     </div><!-- Col 2 end -->

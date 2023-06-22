@@ -66,7 +66,7 @@
                             <div class="col-md-12">
                                 <h3 class="slide-sub-title" data-animation-in="fadeIn">Website Resmi PPID</h3>
                                 <p class="slider-description lead" data-animation-in="slideInRight">Pemerintah Kota
-                                    Madiun
+
                                 </p>
                                 <div data-animation-in="slideInLeft">
                                     <a href="https://satpolpp.sumbarprov.go.id/" class="slider btn btn-primary"

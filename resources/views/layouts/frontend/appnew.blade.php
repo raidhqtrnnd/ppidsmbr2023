@@ -14,8 +14,8 @@
 ================================================== -->
     <!-- <link rel="icon" type="image/png" href="{{ asset('frontend/images/favicon.png') }}"> -->
     <!-- Favicons -->
-    <link href="{{ asset('backend2/assets/img/Lambang_Kota_Madiun.png') }}" rel="icon">
-    <link href="{{ asset('backend2/assets/img/Lambang_Kota_Madiun.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('backend2/assets/img/Lambang_Kota_ .png') }}" rel="icon">
+    <link href="{{ asset('backend2/assets/img/Lambang_Kota_ .png') }}" rel="apple-touch-icon">
 
     <!-- CSS
 ================================================== -->

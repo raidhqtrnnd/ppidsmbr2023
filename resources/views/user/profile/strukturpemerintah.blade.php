@@ -21,7 +21,7 @@
                                     <ol class="breadcrumb justify-content-center">
                                         <li class="breadcrumb-item"><a href="#">Pemerintah </a></li>
                                         <li class="breadcrumb-item"><a href="#">Bagan Struktur Organisasi Pemerintah
-                                                Provinsi Madiun</a></li>
+                                                Provinsi </a></li>
                                     </ol>
                                 </nav>
                             </div>

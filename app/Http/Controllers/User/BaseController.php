@@ -26,7 +26,7 @@ class BaseController extends Controller
         $child = "";
         $root_parent = "/";
         $title = "Detail Berita";
-  
+
         $post =  Post::where('slug', $slug)->where('tgl_post', '=', $time)->where('ispublish', '=', '1')->first();
         $galleries = Document::where('posts_id', '=', $post->id)->where('jenis_file', '=', 'gambar')->get();
         $files = Document::where('posts_id', '=', $post->id)->where('jenis_file', '=', 'lampiran')->get();
@@ -47,31 +47,31 @@ class BaseController extends Controller
         }else{
             $posts = [];
             $child = $slug;
-           
+
         }
 
         $subjudul = "Kategori";
         $parent = $slug;
         $root_parent = "/";
         $title = "Kategori Berita";
-  
+
         $categories = Kategori::all();
         $tags = Tag::all();
         $beritaterkini = Post::where('ispublish', '=', '1')->orderBy('tgl_post', 'DESC')->orderBy('created_at', 'DESC')->limit(3)->get();
         $logo = Icon::where('kategori_name', '=', 'Logo')->orderBy('created_at', 'DESC')->limit(6)->get();
         return view('user.kategori.base', compact('subjudul','categories','posts', 'parent', 'child', 'root_parent', 'title', 'beritaterkini','tags', 'logo'));
-      
+
     }
 
     public function index()
     {
 
         // $beritapop = Post::where('ispublish', '=', '1')->where('category_id', '=', '1')->orderBy('tgl_post', 'DESC')->orderBy('created_at', 'DESC')->first();
-            
+
         $beritaterkini = Post::where('ispublish', '=', '1')->orderBy('tgl_post', 'DESC')->orderBy('created_at', 'DESC')->limit(3)->get();
-        
+
         $beritapinned = Post::where('ispublish', '=', '1')->where('ispinned', '=', '1')->orderBy('tgl_post', 'DESC')->limit(3)->get();
-        
+
         $beritakonten = Post::where('ispublish', '=', '1')->where('ispinned', '=', '0')->orderBy('tgl_post', 'DESC')->orderBy('created_at', 'DESC')->limit(6)->get();
 
         // icon
@@ -80,7 +80,7 @@ class BaseController extends Controller
         $penghargaan = Icon::where('kategori_name', '=', 'Penghargaan')->orderBy('created_at', 'DESC')->limit(3)->get();
         $logo = Icon::where('kategori_name', '=', 'Logo')->orderBy('created_at', 'DESC')->limit(6)->get();
         $youtube = Youtube::where('ispublish', '=', '1')->orderBy('created_at', 'DESC')->limit(1)->get();
-        
+
     return view('user.berita.index',compact('beritaterkini', 'beritapinned', 'beritakonten', 'carousel', 'penghargaan', 'carousel', 'penghargaan', 'logo', 'youtube'));
     }
 
@@ -91,7 +91,7 @@ class BaseController extends Controller
                  ->where('ispublish', '=', '1')
                  ->orderBy('tgl_post', 'DESC')
                  ->paginate(3);
-        
+
         $categories = Kategori::all();
         $tags = Tag::all();
         $beritaterkini = Post::where('ispublish', '=', '1')->orderBy('tgl_post', 'DESC')->orderBy('created_at', 'DESC')->limit(3)->get();
@@ -106,7 +106,7 @@ class BaseController extends Controller
         $url = 'http://10.11.15.69:680/api/ruangrapat/jadwal'; // url api data
 
         try{
-            $response = $client->post($url, 
+            $response = $client->post($url,
                 array(
                     'headers' => array(
                         'passcode' => 'k0taPendekArr'
@@ -116,17 +116,17 @@ class BaseController extends Controller
         }catch(RequestException $exception){
             var_dump($exception->getResponse()->getBody()->getContents());
         }
-        
+
         $json = $response->getBody()->getContents();
-        
+
         $hasil = json_decode($json, true);
 
         $total = (count($hasil["data"]));
-      
+
          return view('user.jadwal.rapat', [
              "data_rapat" => $hasil,
              "jumlah" => $total,
-             "title" => "Jadwal Rapat Kota Madiun",
+             "title" => "Jadwal Rapat Kota  ",
              "parent" => "jadwal_rapat"
          ]);
 
@@ -136,10 +136,10 @@ class BaseController extends Controller
 
         $client = new Client(['verify' => false]); //GuzzleHttp\Client, verification SSL
 
-        $url = 'https://agenda.madiunkota.go.id/api/daftarAgenda'; // url api data
+        $url = 'https://agenda. kota.go.id/api/daftarAgenda'; // url api data
 
         try{
-            $response = $client->post($url, 
+            $response = $client->post($url,
                 array(
                     'headers' => array(
                         'passcode' => 'k0taPendekArr'
@@ -149,17 +149,17 @@ class BaseController extends Controller
         }catch(RequestException $exception){
             var_dump($exception->getResponse()->getBody()->getContents());
         }
-        
+
         $json = $response->getBody()->getContents();
-        
+
         $hasil = json_decode($json, true);
 
         $total = (count($hasil["data"]));
-      
+
          return view('user.jadwal.agenda', [
              "data_agenda" => $hasil,
              "jumlah" => $total,
-             "title" => "Daftar Agenda Kota Madiun",
+             "title" => "Daftar Agenda Kota  ",
              "parent" => "daftar_agenda"
          ]);
 

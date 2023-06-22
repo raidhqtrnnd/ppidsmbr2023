@@ -15,24 +15,24 @@ class ProfileController extends Controller
 {
 
     public function transparansianggaran() {
-        $profile = Profile::where('kategori_profile', '=', 'transparansi-anggaran-kota-madiun')->first();
-        $judul = "Update Transparansi Anggaran Kota Madiun";
+        $profile = Profile::where('kategori_profile', '=', 'transparansi-anggaran-kota  ')->first();
+        $judul = "Update Transparansi Anggaran Kota  ";
         $profil = Profile::findorfail($profile->id);
         $documents = Berkas::where('profile_id', '=', $profil->id)->get();
         return view('admin.profile.form', compact('profile', 'judul', 'documents'));
     }
 
-    public function madiunprofile() {
-        $profile = Profile::where('kategori_profile', '=', 'profil-kota-madiun')->first();
-        $judul = "Update Profil Kota Madiun";
+    public function  profile() {
+        $profile = Profile::where('kategori_profile', '=', 'profil-kota  ')->first();
+        $judul = "Update Profil Kota  ";
         $profil = Profile::findorfail($profile->id);
         $documents = Berkas::where('profile_id', '=', $profil->id)->get();
         return view('admin.profile.form', compact('profile', 'judul', 'documents'));
     }
 
     public function sejarah() {
-        $profile = Profile::where('kategori_profile', '=', 'sejarah-kota-madiun')->first();
-        $judul = "Update Sejarah Kota Madiun";
+        $profile = Profile::where('kategori_profile', '=', 'sejarah-kota  ')->first();
+        $judul = "Update Sejarah Kota  ";
         $profil = Profile::findorfail($profile->id);
         $documents = Berkas::where('profile_id', '=', $profil->id)->get();
         return view('admin.profile.form', compact('profile', 'judul', 'documents'));
@@ -169,11 +169,11 @@ class ProfileController extends Controller
         }
 
 
-        if($profile->kategori_profile == "profil-kota-madiun"){
+        if($profile->kategori_profile == "profil-kota  "){
             Session::flash('success','Sukses Update Data');
-            return redirect()->route('madiunprofile.index');
+            return redirect()->route(' profile.index');
         }
-        elseif($profile->kategori_profile == "sejarah-kota-madiun"){
+        elseif($profile->kategori_profile == "sejarah-kota  "){
             Session::flash('success','Sukses Update Data');
             return redirect()->route('sejarah.index');
         }
@@ -217,11 +217,11 @@ class ProfileController extends Controller
             Session::flash('success','Sukses Update Data');
             return redirect()->route('agenda.index');
         }
-        elseif($profile->kategori_profile == "transparansi-anggaran-kota-madiun"){
+        elseif($profile->kategori_profile == "transparansi-anggaran-kota  "){
             Session::flash('success','Sukses Update Data');
             return redirect()->route('transparansi.index');
         }
-        
+
     }
 
     public function destroy_berkas($berkasprofile){
@@ -232,7 +232,7 @@ class ProfileController extends Controller
 
         if($id == "1"){
             Session::flash('success','Sukses Hapus Data');
-            return redirect()->route('madiunprofile.index');
+            return redirect()->route(' profile.index');
         }
         elseif($id == "2"){
             Session::flash('success','Sukses Hapus Data');

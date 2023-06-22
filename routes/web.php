@@ -26,7 +26,7 @@ Route::post('/admin/logout',[\App\Http\Controllers\Auth\LoginController::class,'
 
 /** Halaman Utama */
 route::get('/',[\App\Http\Controllers\User\BaseController::class,'index'])->name('layouts.frontend.index');
-route::get('/sejarah-kota-madiun',[\App\Http\Controllers\FrontendController::class,'sejarah'])->name('layouts.frontend.sejarahkota');
+route::get('/sejarah-kota  ',[\App\Http\Controllers\FrontendController::class,'sejarah'])->name('layouts.frontend.sejarahkota');
 
 /** Jadwal Rapat dan Agenda Kota */
 Route::get('/jadwal-rapat', [App\Http\Controllers\User\BaseController::class, 'jadwal_rapat'])->name('jadwalrapat');
@@ -52,7 +52,7 @@ Route::group(['middleware'=>['admin','auth','PreventBackHistory']], function(){
 Route::get('/dashboard-admin-ppid',[\App\Http\Controllers\AdminController::class,'dashboard'])->name('admin.index');
 
 /** Menu Profile Pemerintah  */
-Route::get('/profile/kota-madiun',[\App\Http\Controllers\ProfileController::class,'madiunprofile'])->name('madiunprofile.index');
+Route::get('/profile/kota  ',[\App\Http\Controllers\ProfileController::class,' profile'])->name(' profile.index');
 Route::get('/profile/sejarah',[\App\Http\Controllers\ProfileController::class,'sejarah'])->name('sejarah.index');
 Route::get('/profile/letak-geografis',[\App\Http\Controllers\ProfileController::class,'geografis'])->name('geografis.index');
 Route::get('/profile/profil-pemerintah',[\App\Http\Controllers\ProfileController::class,'profilepemerintah'])->name('profil.pemerintah.index');
@@ -65,7 +65,7 @@ Route::get('/profile/tupoksi-pemerintah',[\App\Http\Controllers\ProfileControlle
 Route::get('/profile/tupoksi-unit-kerja',[\App\Http\Controllers\ProfileController::class,'tupoksiunitkerja'])->name('tupoksi.unitkerja.index');
 Route::get('/profile/agenda-kerja-kegiatan-pimpinan',[\App\Http\Controllers\ProfileController::class,'agenda'])->name('agenda.index');
 Route::post('/profil/store', [App\Http\Controllers\ProfileController::class, 'store'])->name('profil.create');
-Route::get('/profile/transparansi-anggaran-kota-madiun',[\App\Http\Controllers\ProfileController::class,'transparansianggaran'])->name('transparansi.index');
+Route::get('/profile/transparansi-anggaran-kota  ',[\App\Http\Controllers\ProfileController::class,'transparansianggaran'])->name('transparansi.index');
 
 /** Menu Profile PPID*/
 Route::get('/profile/ppid',[\App\Http\Controllers\ProfilePPIDController::class,'profileppid'])->name('profile.ppid.index');
@@ -148,38 +148,38 @@ Route::middleware('verified')->group(function () {
 });
 
 /** Menu Profile Pemerintah   */
-Route::get('/sejarah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'sejarah_madiun'])->name('menu.sejarah.madiun');
-Route::get('/letak-geografis-kota-madiun',[\App\Http\Controllers\User\MainController::class,'geografis_madiun'])->name('menu.geografis.madiun');
-Route::get('/profile-pemerintah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'profil_pemerintah'])->name('menu.profilepemerintah.madiun');
-Route::get('/profile-kota-madiun',[\App\Http\Controllers\User\MainController::class,'profil_kota_madiun'])->name('menu.profilkota.madiun');
-Route::get('/profile-pejabat-kota-madiun',[\App\Http\Controllers\User\MainController::class,'profil_pejabat'])->name('menu.profilepejabat.madiun');
-Route::get('/lhkpn-pejabat-publik-pemerintah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'lhkpn_pejabat'])->name('menu.lhkpn.madiun');
-Route::get('/visi-misi-kota-madiun',[\App\Http\Controllers\User\MainController::class,'visimisi'])->name('menu.visimisi.madiun');
-Route::get('/bagan-struktur-organisasi-pemerintah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'struktur_pemerintah'])->name('menu.strukturpemerintah.madiun');
-Route::get('/struktur-organisasi-unit-kerja',[\App\Http\Controllers\User\MainController::class,'struktur_unitkerja'])->name('menu.strukturunitkerja.madiun');
-Route::get('/tupoksi-pemerintah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'tupoksi_pemerintah'])->name('menu.tupoksipemerintah.madiun');
-Route::get('/tupoksi-unit-kerja-kota-madiun',[\App\Http\Controllers\User\MainController::class,'tupoksi_unitkerja'])->name('menu.tupoksiunitkerja.madiun');
-Route::get('/agenda-kerja-dan-kegiatan-pimpinan-pemerintah-kota-madiun',[\App\Http\Controllers\User\MainController::class,'agenda'])->name('menu.agenda.madiun');
-Route::get('/transparansi-anggaran-kota-madiun',[\App\Http\Controllers\User\MainController::class,'transparansianggaran'])->name('menu.transparansianggaran.madiun');
+Route::get('/sejarah-kota  ',[\App\Http\Controllers\User\MainController::class,'sejarah_ '])->name('menu.sejarah. ');
+Route::get('/letak-geografis-kota  ',[\App\Http\Controllers\User\MainController::class,'geografis_ '])->name('menu.geografis. ');
+Route::get('/profile-pemerintah-kota  ',[\App\Http\Controllers\User\MainController::class,'profil_pemerintah'])->name('menu.profilepemerintah. ');
+Route::get('/profile-kota  ',[\App\Http\Controllers\User\MainController::class,'profil_kota_ '])->name('menu.profilkota. ');
+Route::get('/profile-pejabat-kota',[\App\Http\Controllers\User\MainController::class,'profil_pejabat'])->name('menu.profilepejabat');
+Route::get('/lhkpn-pejabat-publik-pemerintah-kota  ',[\App\Http\Controllers\User\MainController::class,'lhkpn_pejabat'])->name('menu.lhkpn. ');
+Route::get('/visi-misi-kota  ',[\App\Http\Controllers\User\MainController::class,'visimisi'])->name('menu.visimisi. ');
+Route::get('/bagan-struktur-organisasi-pemerintah-kota  ',[\App\Http\Controllers\User\MainController::class,'struktur_pemerintah'])->name('menu.strukturpemerintah. ');
+Route::get('/struktur-organisasi-unit-kerja',[\App\Http\Controllers\User\MainController::class,'struktur_unitkerja'])->name('menu.strukturunitkerja. ');
+Route::get('/tupoksi-pemerintah-kota  ',[\App\Http\Controllers\User\MainController::class,'tupoksi_pemerintah'])->name('menu.tupoksipemerintah. ');
+Route::get('/tupoksi-unit-kerja-kota  ',[\App\Http\Controllers\User\MainController::class,'tupoksi_unitkerja'])->name('menu.tupoksiunitkerja. ');
+Route::get('/agenda-kerja-dan-kegiatan-pimpinan-pemerintah-kota  ',[\App\Http\Controllers\User\MainController::class,'agenda'])->name('menu.agenda. ');
+Route::get('/transparansi-anggaran-kota  ',[\App\Http\Controllers\User\MainController::class,'transparansianggaran'])->name('menu.transparansianggaran. ');
 
 
 /** Menu Profile PPID */
-Route::get('/profil-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'profil_ppid'])->name('menu.profil.ppid');
-Route::get('/visi-misi-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'visimisi_ppid'])->name('menu.visimisi.ppid');
-Route::get('/struktur-organisasi-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'struktur_ppid'])->name('menu.struktur.ppid');
-Route::get('/sop-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'sop_ppid'])->name('menu.sop.ppid');
-Route::get('/tupoksi-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'tupoksi_ppid'])->name('menu.tupoksi.ppid');
-Route::get('/sk-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'sk_ppid'])->name('menu.sk.ppid');
-Route::get('/perwal-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'perwal_ppid'])->name('menu.perwal.ppid');
-Route::get('/maklumat-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'maklumat_ppid'])->name('menu.maklumat.ppid');
-Route::get('/jampelayanan-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'jampelayanan_ppid'])->name('menu.jampelayanan.ppid');
-Route::get('/informasi-publik-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'informasi_publik'])->name('menu.informasipublik.ppid');
-Route::get('/informasi-dikecualikan-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'informasi_dikecualikan'])->name('menu.informasidikecualikan.ppid');
+Route::get('/profil-ppid-kota',[\App\Http\Controllers\User\MainController::class,'profil_ppid'])->name('menu.profil.ppid');
+Route::get('/visi-misi-ppid-kota',[\App\Http\Controllers\User\MainController::class,'visimisi_ppid'])->name('menu.visimisi.ppid');
+Route::get('/struktur-organisasi-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'struktur_ppid'])->name('menu.struktur.ppid');
+Route::get('/sop-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'sop_ppid'])->name('menu.sop.ppid');
+Route::get('/tupoksi-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'tupoksi_ppid'])->name('menu.tupoksi.ppid');
+Route::get('/sk-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'sk_ppid'])->name('menu.sk.ppid');
+Route::get('/perwal-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'perwal_ppid'])->name('menu.perwal.ppid');
+Route::get('/maklumat-ppid-kota',[\App\Http\Controllers\User\MainController::class,'maklumat_ppid'])->name('menu.maklumat.ppid');
+Route::get('/jampelayanan-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'jampelayanan_ppid'])->name('menu.jampelayanan.ppid');
+Route::get('/informasi-publik-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'informasi_publik'])->name('menu.informasipublik.ppid');
+Route::get('/informasi-dikecualikan-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'informasi_dikecualikan'])->name('menu.informasidikecualikan.ppid');
 
 /** Menu Informasi Publik */
 /** Menu Profile Pemerintah   */
-Route::get('/daftar-informasi-publik-ppid-kota-madiun',[\App\Http\Controllers\User\MainController::class,'informpublik'])->name('informasi.publik');
-Route::get('/daftar-informasi-publik-ppid-kota-madiun-2023',[\App\Http\Controllers\User\MainController::class,'informpublik_2023'])->name('informasi.publik2023');
+Route::get('/daftar-informasi-publik-ppid-kota  ',[\App\Http\Controllers\User\MainController::class,'informpublik'])->name('informasi.publik');
+Route::get('/daftar-informasi-publik-ppid-kota  -2023',[\App\Http\Controllers\User\MainController::class,'informpublik_2023'])->name('informasi.publik2023');
 Route::get('/daftar-informasi-publik-ppid-pelaksana',[\App\Http\Controllers\User\MainController::class,'informppid'])->name('informasi.ppid');
 Route::get('/informasi-secara-berkala',[\App\Http\Controllers\User\MainController::class,'informberkala'])->name('informasi.berkala');
 Route::get('/informasi-serta-merta',[\App\Http\Controllers\User\MainController::class,'informsertamerta'])->name('informasi.sertamerta');
@@ -193,7 +193,7 @@ Route::get('/sop-pedoman-kepegawaian',[\App\Http\Controllers\User\MainController
 Route::get('/sop-pedoman-pengelolaan-keuangan',[\App\Http\Controllers\User\MainController::class,'sopkeuangan'])->name('sop.keuangan');
 
 /** Menu PPID Pelaksana */
-Route::get('/ppid-pelaksana-kota-madiun',[\App\Http\Controllers\User\MainController::class,'ppidpelaksana'])->name('menu.ppid.pelaksana');
+Route::get('/ppid-pelaksana-kota  ',[\App\Http\Controllers\User\MainController::class,'ppidpelaksana'])->name('menu.ppid.pelaksana');
 // Auth::routes();
 
 /** File Show */

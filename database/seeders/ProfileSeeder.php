@@ -17,10 +17,10 @@ class ProfileSeeder extends Seeder
     {
         DB::table('profile')->insert([
             [
-            'kategori_profile' => 'profil-kota-madiun'
+            'kategori_profile' => 'profil-kota  '
             ],
             [
-                'kategori_profile' => 'sejarah-kota-madiun'
+                'kategori_profile' => 'sejarah-kota  '
             ],
             [
                 'kategori_profile' => 'letak-geografis'

@@ -22,7 +22,7 @@
             <h3 class="widget-title">Informasi</h3>
             <div class="text-white"><i class="fas fa-map-marker-alt"></i><h8 style="margin-left:15px;">Jl. Perintis Kemerdekaan No. 32  </h8></div>
             <div class="text-white"><i class="fas fa-phone"></i><h8 style="margin-left:10px;">(0351) 467327</h8></div>
-            <div class="text-white"><i class="fas fa-envelope"></i><h8 style="margin-left:10px;">ppid@madiunkota.go.id</h8></div>
+            <div class="text-white"><i class="fas fa-envelope"></i><h8 style="margin-left:10px;">ppid@ kota.go.id</h8></div>
             </div> --}}
 
                 <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 footer-widget">

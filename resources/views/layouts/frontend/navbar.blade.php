@@ -17,20 +17,20 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Profil <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
                               <li class="dropdown-submenu">
-                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Pemerintah Kota <br> Madiun </a>
+                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Pemerintah Kota <br>   </a>
                                   <ul class="dropdown-menu">
-                                    <li><a href="{{ route('contents_kategori', 'profil-kota-madiun') }}">Profil  </a></li>
-                                    <li><a href="{{ route('menu.sejarah.madiun') }}">Sejarah  </a></li>
-                                    <li><a href="{{ route('menu.geografis.madiun') }}">Letak Geografis  </a></li>
-                                    <li><a href="{{ route('menu.profilepemerintah.madiun') }}">Profil Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.profilepejabat.madiun') }}">Profil Pejabat Daerah</a></li>
-                                    <li><a href="{{ route('menu.lhkpn.madiun') }}">LHKPN Pejabat Publik Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.visimisi.madiun') }}">Visi Misi  </a></li>
-                                    <li><a href="{{ route('menu.strukturpemerintah.madiun') }}">Bagan Struktur Organisasi Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.strukturunitkerja.madiun') }}">Struktur Organisasi Unit Kerja</a></li>
-                                    <li><a href="{{ route('menu.tupoksipemerintah.madiun') }}">Tupoksi Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.tupoksiunitkerja.madiun') }}">Tupoksi Unit Kerja</a></li>
-                                    <li><a href="{{ route('menu.agenda.madiun') }}">Agenda Kerja dan Kegiatan Pimpinan Pemerintah  </a></li>
+                                    <li><a href="{{ route('contents_kategori', 'profil-kota  ') }}">Profil  </a></li>
+                                    <li><a href="{{ route('menu.sejarah. ') }}">Sejarah  </a></li>
+                                    <li><a href="{{ route('menu.geografis. ') }}">Letak Geografis  </a></li>
+                                    <li><a href="{{ route('menu.profilepemerintah. ') }}">Profil Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.profilepejabat. ') }}">Profil Pejabat Daerah</a></li>
+                                    <li><a href="{{ route('menu.lhkpn. ') }}">LHKPN Pejabat Publik Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.visimisi. ') }}">Visi Misi  </a></li>
+                                    <li><a href="{{ route('menu.strukturpemerintah. ') }}">Bagan Struktur Organisasi Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.strukturunitkerja. ') }}">Struktur Organisasi Unit Kerja</a></li>
+                                    <li><a href="{{ route('menu.tupoksipemerintah. ') }}">Tupoksi Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.tupoksiunitkerja. ') }}">Tupoksi Unit Kerja</a></li>
+                                    <li><a href="{{ route('menu.agenda. ') }}">Agenda Kerja dan Kegiatan Pimpinan Pemerintah  </a></li>
                                   </ul>
                               </li>
                               <li class="dropdown-submenu">
@@ -115,13 +115,13 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data Statistik <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="https://dashboard.madiunkota.go.id/" target="_blank">Data Sektoral</a></li>
-                              <li><a href="https://madiunkota.bps.go.id/" target="_blank">BPS  </a></li>
+                              <li><a href="https://dashboard. kota.go.id/" target="_blank">Data Sektoral</a></li>
+                              <li><a href="https:// kota.bps.go.id/" target="_blank">BPS  </a></li>
                               <li><a href="">Data Penduduk   Tahun 2019</a></li>
                               <li><a href="https://hargapangan.id/" target="_blank">Tabel Harga Berdasarkan Daerah</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="https://ppid.madiunkota.go.id/" target="_blank">Arsip PPID  </a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://ppid. kota.go.id/" target="_blank">Arsip PPID  </a></li>
 
                       </ul>
                   </div>
@@ -144,7 +144,7 @@
                             <li>
                                 <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                                     <a class="d-block" href="/">
-                                        {{-- <img src="{{asset('backend2/assets/img/Lambang_Kota_Madiun.png')}}" alt="Constra" style="margin-bottom: 10px"> --}}
+                                        {{-- <img src="{{asset('backend2/assets/img/Lambang_Kota_ .png')}}" alt="Constra" style="margin-bottom: 10px"> --}}
                                         <img src="{{ asset('frontend/images/ppid2.png') }}" alt="Constra"
                                             style="width:130px; height:50px; margin-bottom: 10px; margin-top: 8px">
                                     </a>
@@ -160,20 +160,20 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Profil <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
                               <li class="dropdown-submenu">
-                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Pemerintah Kota <br> Madiun </a>
+                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Pemerintah Kota <br>   </a>
                                   <ul class="dropdown-menu">
-                                    <li><a href="{{ route('menu.profilkota.madiun') }}">Profil  </a></li>
-                                    <li><a href="{{ route('menu.sejarah.madiun') }}">Sejarah  </a></li>
-                                    <li><a href="{{ route('menu.geografis.madiun') }}">Letak Geografis  </a></li>
-                                    <li><a href="{{ route('menu.profilepemerintah.madiun') }}">Profil Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.profilepejabat.madiun') }}">Profil Pejabat Daerah</a></li>
-                                    <li><a href="{{ route('menu.lhkpn.madiun') }}">LHKPN Pejabat Publik Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.visimisi.madiun') }}">Visi Misi  </a></li>
-                                    <li><a href="{{ route('menu.strukturpemerintah.madiun') }}">Bagan Struktur Organisasi Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.strukturunitkerja.madiun') }}">Struktur Organisasi Unit Kerja</a></li>
-                                    <li><a href="{{ route('menu.tupoksipemerintah.madiun') }}">Tupoksi Pemerintah  </a></li>
-                                    <li><a href="{{ route('menu.tupoksiunitkerja.madiun') }}">Tupoksi Unit Kerja</a></li>
-                                    <li><a href="{{ route('menu.agenda.madiun') }}">Agenda Kerja dan Kegiatan Pimpinan Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.profilkota. ') }}">Profil  </a></li>
+                                    <li><a href="{{ route('menu.sejarah. ') }}">Sejarah  </a></li>
+                                    <li><a href="{{ route('menu.geografis. ') }}">Letak Geografis  </a></li>
+                                    <li><a href="{{ route('menu.profilepemerintah. ') }}">Profil Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.profilepejabat. ') }}">Profil Pejabat Daerah</a></li>
+                                    <li><a href="{{ route('menu.lhkpn. ') }}">LHKPN Pejabat Publik Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.visimisi. ') }}">Visi Misi  </a></li>
+                                    <li><a href="{{ route('menu.strukturpemerintah. ') }}">Bagan Struktur Organisasi Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.strukturunitkerja. ') }}">Struktur Organisasi Unit Kerja</a></li>
+                                    <li><a href="{{ route('menu.tupoksipemerintah. ') }}">Tupoksi Pemerintah  </a></li>
+                                    <li><a href="{{ route('menu.tupoksiunitkerja. ') }}">Tupoksi Unit Kerja</a></li>
+                                    <li><a href="{{ route('menu.agenda. ') }}">Agenda Kerja dan Kegiatan Pimpinan Pemerintah  </a></li>
                                   </ul>
                               </li>
                               <li class="dropdown-submenu">
@@ -196,8 +196,7 @@
                             </ul>
                         </li> --}}
 
-                            <li class="nav-item"><a class="nav-link"
-                                    href="{{ route('menu.profilepejabat.madiun') }}">Data
+                            <li class="nav-item"><a class="nav-link" href="{{ route('menu.profilepejabat') }}">Data
                                     Profil</a></li>
 
                             <li class="nav-item"><a class="nav-link"
@@ -262,17 +261,17 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data Statistik
                                     <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="https://dashboard.madiunkota.go.id/" target="_blank">Data Sektoral</a>
+                                    <li><a href="https://dashboard. kota.go.id/" target="_blank">Data Sektoral</a>
                                     </li>
-                                    <li><a href="https://madiunkota.bps.go.id/" target="_blank">BPS  </a></li>
-                                    <li><a href="https://profilpenduduk.madiunkota.go.id/rekap-data-kependudukan"
+                                    <li><a href="https:// kota.bps.go.id/" target="_blank">BPS  </a></li>
+                                    <li><a href="https://profilpenduduk. kota.go.id/rekap-data-kependudukan"
                                             target="_blank">Data Penduduk   Tahun 2021</a></li>
                                     <li><a href="https://hargapangan.id/" target="_blank">Tabel Harga Berdasarkan
                                             Daerah</a></li>
                                 </ul>
                             </li> --}}
-                            {{-- <li class="nav-item"><a class="nav-link" href="https://arsip-ppid.madiunkota.go.id/"
-                                    target="_blank">Arsip PPID Kota Madiun</a></li> --}}
+                            {{-- <li class="nav-item"><a class="nav-link" href="https://arsip-ppid. kota.go.id/"
+                                    target="_blank">Arsip PPID Kota  </a></li> --}}
                         </ul>
                     </div>
 
